@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kalkulator sederhana</title>
+    <link rel="stylesheet" type="text/css" href="../tugas6_js_2_Cahya_Aprilia_Putranti_ITTP/style.css" />
+</head>
+
+<body>
+    <form id="formulir">
+        <h1>Calculator</h1>
+        <hr/>
+        Angka 1 <input type="text" name="a1" onfocus="kosong1()" value="Masukan angka pertama" id="a" /> <br/>
+        Angka 2 <input type="text" name="a2" onfocus="kosong2()" value="Masukan angka kedua" id="a"/> <br/>
+        Hasil   <input type="text" name="hasil" value="0" disabled id="hasil"/> <br/>
+        <input class="tombol" type="button" name="tambah" onclick="hasilTambah()" value="+" />
+        <input class="tombol" type="button" name="kurang" onclick="hasilKurang()" value="-" />
+        <input class="tombol" type="button" name="kali" onclick="hasilKali()" value="x" />
+        <input class="tombol" type="button" name="bagi" onclick="hasilBagi()" value="/" />
+        <input class="tombol" type="button" name="pangkat" onclick="hasilPangkat()" value="^" /> <br/>
+        <input class="batal" type="button" name="batal" onclick="kosongAll()" value="Batal" />
+    </form>
+</body>
+<script src="../tugas6_js_2_Cahya_Aprilia_Putranti_ITTP/skrip.js"></script>
+
+</html>
