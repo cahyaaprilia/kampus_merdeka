@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gempa</title>
+    <link rel="stylesheet" type="text/css" href="../tugas7_js_2_Cahya_Aprilia_Putranti_ITTP/style.css" />
+</head>
+
+<body>
+    <script>
+        let data = ['Lokasi', 'Skala', 'Dampak'];
+    </script>
+    <h1>List Data Gempa</h1>
+    <fieldset>
+        <table align="center" cellpadding="10" cellspacing="0" width="700" id="tabel">
+            <thead>
+                <tr bgcolor=" #9e3d3d">
+                    <script>
+                        for (let d in data) {
+                            document.write(`<th>${data[d]}</th>`)
+                        }
+                    </script>
+                </tr>
+            </thead>
+            <tbody>
+                <script>
+                    class Gempa {
+                        constructor(skala, lokasi) {
+                            this.besar = skala;
+                            this.tempat = lokasi;
+                        }
+
+                        dampak() {
+                            let gempa;
+                            if (this.besar >= 0 && this.besar <= 2) gempa = "Tidak terasa";
+                            else if (this.besar > 2 && this.besar <= 4) gempa = "Retak - retak";
+                            else if (this.besar > 4 && this.besar <= 6) gempa = "Bangunan roboh";
+                            else if (this.besar > 6) gempa = "Bangunan roboh berpotensi tsunami";
+                            else gempa = "aman tentram";
+
+                            document.write(`<tr bgcolor="#ffcc99">
+                            <td>${this.tempat}</td>
+                            <td>${this.besar}</td>
+                            <td>${gempa}</td>
+                        </tr>`)
+                        }
+                    }
+                </script>
+                <script>
+                    let data1 = new Gempa(9.1, 'Aceh, Indonesia');
+                    let data2 = new Gempa(4.0, 'Rusia');
+                    let data3 = new Gempa(4.8, 'India');
+                    let data4 = new Gempa(2, 'Thailand');
+                    let data5 = new Gempa(7, 'Inggris',);
+                    let data6 = new Gempa(3.5, 'Korea');
+                    let data7 = new Gempa(8.5, 'Tibet');
+                    let data8 = new Gempa(4.2, 'Chile');
+                    let data9 = new Gempa(6, 'Peru');
+                    let data10 = new Gempa(3.8, 'Philipine');
+
+                    data1.dampak();
+                    data2.dampak();
+                    data3.dampak();
+                    data4.dampak();
+                    data5.dampak();
+                    data6.dampak();
+                    data7.dampak();
+                    data8.dampak();
+                    data9.dampak();
+                    data10.dampak();
+
+                </script>
+            </tbody>
+        </table>
+    </fieldset>
+</body>
+
+</html>
