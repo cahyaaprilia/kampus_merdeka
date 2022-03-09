@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hewan</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $("div.bebek").click(function () {
+                $(this).css({
+                    background: "url('../tugas8_js_2_Cahya_Aprilia_Putranti_ITTP/img/bebek.png')"
+                });
+            });
+            $("div.bebek").click(function () {
+                $("<audio></audio>").attr({
+                    'src': '../tugas8_js_2_Cahya_Aprilia_Putranti_ITTP/audio/bebek.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("body");
+            });
+            $("div.burung").click(function () {
+                $(this).css({
+                    background: "url('../tugas8_js_2_Cahya_Aprilia_Putranti_ITTP/img/burung.jpeg')"
+                });
+            });
+            $("div.burung").click(function () {
+                $("<audio></audio>").attr({
+                    'src': '../tugas8_js_2_Cahya_Aprilia_Putranti_ITTP/audio/burung.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("body");
+            });
+            $("div.kucing").click(function () {
+                $(this).css({
+                    background: "url('../tugas8_js_2_Cahya_Aprilia_Putranti_ITTP/img/kucing.jpeg')"
+                });
+            });
+            $("div.kucing").click(function () {
+                $("<audio></audio>").attr({
+                    'src': '../tugas8_js_2_Cahya_Aprilia_Putranti_ITTP/audio/kucing.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("body");
+            });
+            $("div.macan").click(function () {
+                $(this).css({
+                    background: "url('../tugas8_js_2_Cahya_Aprilia_Putranti_ITTP/img/macan.png')"
+                });
+            });
+            $("div.macan").click(function () {
+                $("<audio></audio>").attr({
+                    'src': '../tugas8_js_2_Cahya_Aprilia_Putranti_ITTP/audio/macan.mp3',
+                    'volume': 0.4,
+                    'autoplay': 'autoplay'
+                }).appendTo("body");
+            });
+        });
+    </script>
+    <style type="text/css">
+        div {
+            background: #BC8F8F;
+            padding: 5px;
+            width: 112px;
+            height: 112px;
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        div.bingkai {
+            width: 144px;
+            height: 144px;
+            padding-bottom: 20px;
+            /* float: left; */
+            margin-left: 5px;
+            cursor: pointer;
+            border-radius: 20px;
+            border: 5px solid #c2bcbc;
+        }
+        
+        
+        h1 {
+            color: black;
+            text-align: center;
+            line-height: 1cm;
+            margin-top: 2%;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 10px;
+        }
+        
+        h5 {
+            color: white;
+            /* line-height: 2cm; */
+            margin-top: 3%;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        fieldset {
+            padding: 3%;
+            margin: 25%;
+            margin-top: 2%;
+            background-color: #c2bcbc;
+            border: 2px solid #c2bcbc;
+            box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.2), 0 9px 23px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 5px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h1>Klik pada setiap kotak untuk menampilkan hewan</h1>
+        <div class="bingkai">
+            <div class="bebek">
+            </div>
+            <h5>Ini gambar bebek</h5>
+        </div>
+        <div class="bingkai">
+            <div class="burung">
+            </div>
+            <h5>Ini gambar burung</h5>
+        </div>
+        <div class="bingkai">
+            <div class="kucing">
+            </div>
+            <h5>Ini gambar kucing</h5>
+        </div>
+        <div class="bingkai">
+            <div class="macan">
+            </div>
+            <h5>Ini gambar macan</h5>
+    </fieldset>
+</body
