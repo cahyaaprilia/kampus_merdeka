@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Belajar RWD Bootstrap</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <!-- ini baris pertama -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/3.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/2.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- ini baris kedua -->
+
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <!-- -------awal navbar--------- -->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                                <img src="https://learn.nurulfikri.com/pluginfile.php/1/theme_edumy/headerlogo2/1644315075/logo_nf-computer-ok.png"
+                                    width="130" height="30" alt="">
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- -------akhir navbar--------- -->
+                </div>
+            </div>
+            <!-- ini baris ketiga -->
+            <div class="row mt-3">
+                <div class="col-md-2">
+                    <!-- awal list group -->
+                    <ul class="list-group">
+                        <li class="list-group-item active" aria-current="true">An active item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
+                    <!-- akhir list group -->
+                </div>
+                <div class="col-md-8">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Table</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Card</button>
+                        </li>
+                        <hr>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="pills-home" class="tab-pane fade in active">
+                            <!-- ini awal konten -->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Company Profile
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                NF COMPUTER adalah bagian dari grup Nurul Fikri yang telah dipercaya
+                                                oleh
+                                                masyarakat Indonesia di bidang pendidikan dan peningkatan sumber daya
+                                                manusia selama lebih dari 24 tahun. Alumni-alumninya telah berkiprah dan
+                                                diakui kualitas kerja dan integritasnya
+                                                oleh dunia usaha.
+                                            </p>
+                                            <p>
+                                                NF COMPUTER dirintis sejak tahun 1994 dan merupakan sebuah lembaga di
+                                                bidang
+                                                pendidikan dan pelatihan IT <i> (Information Technology)</i>. Kami
+                                                berkomitmen menjadi partner perusahaan Anda dalam mengembangkan
+                                                kemampuan
+                                                serta keahlian
+                                                SDM di bidang IT. Dengan komitmen tersebut, kami mempersiapkan tim
+                                                pengajar
+                                                yang professional dan berpengalaman di bidang IT.
+                                            </p>
+                                            <p>
+                                                Di <strong>Era Industri 4.0</strong> saat ini, teknologi informasi
+                                                berkembang sangat cepat, oleh karena itu pengembangan sumber daya
+                                                manusia di
+                                                bidang IT menjadi sebuah kebutuhan yang perlu diprioritaskan. NF
+                                                COMPUTER
+                                                menjadi jawaban
+                                                yang tepat atas kebutuhan pengembangan kompetensi IT. Sehingga kami
+                                                selalu
+                                                berusaha untuk terus berinovasi terhadap teknologi terbaru.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Visi Misi
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <dl>
+                                                <h4>Visi</h4>
+                                                <dd>
+                                                    Menjadi institusi pelatihan yang kompeten dan profesional di bidang
+                                                    pendidikan teknologi informasi dan komunikasi di berbagai wilayah
+                                                    indonesia.
+                                                </dd>
+                                                <h4>Misi</h4>
+                                                <dd>
+                                                    Membangun, memelihara dan mengembangkan institusi pelatihan bisnis
+                                                    berdaya saing tinggi, berkarakter profesional, kompeten,
+                                                    mengedepankan
+                                                    integritas dan tanggung jawab sosial, dengan mengembangkan dan
+                                                    menyediakan produk produk pendidikan dan pelatihan
+                                                    teknologi informasi dan komunikasi prima.
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Deskripsi Bisnis
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                NF COMPUTER menyelenggarakan Pelatihan dan Pendidikan di bidang
+                                                Teknologi
+                                                Informasi dan Komunikasi (IT Training) yang dibagi menjadi lima produk.
+                                            </p>
+                                            <p>
+                                                Pelatihan (training) ini dibagi dalam beberapa kategori produk yaitu :
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Public Class, merupakan short course bidang TIK (Teknologi Informasi
+                                                    dan
+                                                    Komunikasi) yang berbasis Linux maupun Windows.
+                                                </li>
+                                                <li>
+                                                    Exclusive Class, merupakan paket training yang diberikan kepada
+                                                    customer
+                                                    dengan durasi 6-8 jam perhari dengan jumlah peserta minimal 2 orang
+                                                    dan
+                                                    pelaksanaan pelatihannya di NF Computer.
+                                                </li>
+                                                <li>
+                                                    In House/In Company Training, yaitu pelatihan TIK yang dikustomisasi
+                                                    untuk kebutuhan perusahaan-perusahaan
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                Paket bisnis khusus dibagi ke dalam beberapa kategori produk yang
+                                                dikelola
+                                                secara profesional oleh NF COMPUTER yaitu :
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Kerjasama Pendidikan Sekolah, yaitu Divisi khusus pendidikan sekolah
+                                                    dimana NF COMPUTER bekerjasama dalam hal : Kerjasama pembangunan Lab
+                                                    Komputer, Pengajaran Komputer dan kombinasi antara keduanya.
+                                                </li>
+                                                <li>
+                                                    Usulan Produk lain: Produk-produk yang menurut lokasi diminati oleh
+                                                    pasar tapi belum ada dalam daftar produk pelatihan dan pendidikan NF
+                                                    COMPUTER, dapat diajukan oleh cabang untuk menjadi produk yang
+                                                    dipertimbangkan sebagai produk dan akan menjadi bagian
+                                                    dari penyelenggaraan pelatiahan dan pendidikan di cabang tersebut
+                                                    pada
+                                                    periode yang dianggap tepat oleh NF COMPUTER.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ini akhir konten -->
+                        </div>
+                        <div id="pills-profile" class="tab-pane fade in active">
+                            <table class="table table-dark table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nama Sekolah</th>
+                                        <th scope="col">Tahun</th>
+                                        <th scope="col">Alamat</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>TK Pertiwi Sokaraja Kulon</td>
+                                        <td>2005-2006</td>
+                                        <td>Sokaraja</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>SD Negeri 2 Sokraja Kulon</td>
+                                        <td>2006-2012</td>
+                                        <td>Sokaraja</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>SMP Negeri 1 Sokaraja</td>
+                                        <td>2012-2015</td>
+                                        <td>Sokaraja</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>SMA Negeri 1 Banyumas</td>
+                                        <td>2016-2018</td>
+                                        <td>Banyumas</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Institut Teknologi Telkom Purwokerto</td>
+                                        <td>2019-sekarang</td>
+                                        <td>Purwokerto</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="pills-contact" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card" style="width: 20rem;">
+                                        <img src="img/4.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">LUKISAN 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card" style="width: 20rem;">
+                                        <img src="img/5.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">LUKISAN 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card" style="width: 20rem;">
+                                        <img src="img/6.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">LUKISAN 3</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="list-group mb-3">
+                        <button type="button" class="btn btn-primary">
+                            Notifications <span class="badge bg-secondary">4</span>
+                        </button>
+                        <br />
+                        <button type="button" class="btn btn-primary position-relative">
+                            Inbox
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                99+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+                        <br/>
+                        <button type="button" class="btn btn-primary position-relative">
+                            Profile
+                            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- ini baris keempat -->
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <!-- ini awal footer -->
+                    <div class="alert alert-primary" role="alert" style="text-align: center;">
+                        Design By: Cahya Aprilia P@2022 Kampus Merdeka
+                    </div>
+                    <!-- ini akhir footer -->
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</html>
